@@ -1,7 +1,8 @@
 {
   "repoURL": "https://github.com/jwinters01/argocd-example-apps",
-  "drySha": "8c3f42d554b7ae1561bd34bcd8db328c5420d1d4",
-  "author": "Jonathan Winters <wintersjonathan0@gmail.com>",
-  "date": "2025-09-11T15:04:03Z",
-  "subject": "make some change"
+  "drySha": "7cbc03775792ab10a834ac1a7bb75727b92d39eb",
+  "author": "jwinters01 <34199886+jwinters01@users.noreply.github.com>",
+  "date": "2025-09-11T15:09:53Z",
+  "subject": "Merge pull request #2 from jwinters01/example-change",
+  "body": "Example change\n"
 }
