@@ -1,8 +1,7 @@
 {
   "repoURL": "https://github.com/jwinters01/argocd-example-apps",
-  "drySha": "0d521c6e049889134f3122eb32d7ed342f43ca0d",
-  "author": "Yoonji Heo <myeunee@gmail.com>",
-  "date": "2025-09-09T11:15:23Z",
-  "subject": "chore: modernize ingress annotations and nodeSelector label (#402)",
-  "body": "Signed-off-by: Yoonji Heo <myeunee@gmail.com>\n"
+  "drySha": "8c3f42d554b7ae1561bd34bcd8db328c5420d1d4",
+  "author": "Jonathan Winters <wintersjonathan0@gmail.com>",
+  "date": "2025-09-11T15:04:03Z",
+  "subject": "make some change"
 }
