@@ -1,8 +1,8 @@
 {
   "repoURL": "https://github.com/jwinters01/argocd-example-apps",
-  "drySha": "c713983a9449e560acbcddd7e19f1e6340f5db64",
+  "drySha": "db716d93bd16c877add0c62b1d3f0d54e1df31ce",
   "author": "jwinters01 <34199886+jwinters01@users.noreply.github.com>",
-  "date": "2025-09-18T09:12:17-07:00",
-  "subject": "Merge pull request #6 from jwinters01/jwinters01-patch-1",
-  "body": "Reduce revision history limit to 3\n"
+  "date": "2025-09-22T15:14:29-07:00",
+  "subject": "Merge pull request #10 from jwinters01/jwinters01-patch-2",
+  "body": "Increase revision history limit from 3 to 4\n"
 }
