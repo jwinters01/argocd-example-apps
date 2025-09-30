@@ -1,0 +1,10 @@
+apiVersion: promoter.argoproj.io/v1alpha1
+kind: GitRepository
+metadata:
+  name: github-argocd-example-apps
+spec:
+  github:
+    owner: jwinters01
+    name: argocd-example-apps
+  scmProviderRef:
+    name: github
