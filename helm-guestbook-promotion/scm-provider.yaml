@@ -2,6 +2,7 @@ apiVersion: promoter.argoproj.io/v1alpha1
 kind: ScmProvider
 metadata:
   name: github
+  namespace: gitops-promoter
 spec:
   secretRef:
     name: github-app-promoter
