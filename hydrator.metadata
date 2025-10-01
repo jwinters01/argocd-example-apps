@@ -1,0 +1,7 @@
+{
+  "repoURL": "https://github.com/jwinters01/argocd-example-apps",
+  "drySha": "6c40e4f47d6e2e82dc8817b6c592ac9ad335890b",
+  "author": "Jonathan Winters <wintersjonathan0@gmail.com>",
+  "date": "2025-10-01T14:30:40-04:00",
+  "subject": "Merge branch 'master' of ssh://github.com/jwinters01/argocd-example-apps"
+}
