@@ -1,8 +1,7 @@
 {
   "repoURL": "https://github.com/jwinters01/argocd-example-apps",
-  "drySha": "e8cadda4fb025eff15c86727a841ee3a36aa3c92",
-  "author": "jwinters01 <34199886+jwinters01@users.noreply.github.com>",
-  "date": "2025-10-01T11:40:36-04:00",
-  "subject": "Test new promoter deployment",
-  "body": "change revision history limit from 4 to 3\n"
+  "drySha": "6c40e4f47d6e2e82dc8817b6c592ac9ad335890b",
+  "author": "Jonathan Winters <wintersjonathan0@gmail.com>",
+  "date": "2025-10-01T14:30:40-04:00",
+  "subject": "Merge branch 'master' of ssh://github.com/jwinters01/argocd-example-apps"
 }
