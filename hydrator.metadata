@@ -1,0 +1,7 @@
+{
+  "repoURL": "https://github.com/jwinters01/argocd-example-apps",
+  "drySha": "efb5f76eb543ea7a41fe0ce138d883b714307561",
+  "author": "Jonathan Winters <wintersjonathan0@gmail.com>",
+  "date": "2025-09-30T17:14:24-04:00",
+  "subject": "add namespace"
+}
