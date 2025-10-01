@@ -29,7 +29,7 @@ metadata:
   name: development-helm-guestbook
 spec:
   replicas: 1
-  revisionHistoryLimit: 3
+  revisionHistoryLimit: 5
   selector:
     matchLabels:
       app: helm-guestbook

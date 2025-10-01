@@ -1,7 +1,8 @@
 {
   "repoURL": "https://github.com/jwinters01/argocd-example-apps",
-  "drySha": "6c40e4f47d6e2e82dc8817b6c592ac9ad335890b",
-  "author": "Jonathan Winters <wintersjonathan0@gmail.com>",
-  "date": "2025-10-01T14:30:40-04:00",
-  "subject": "Merge branch 'master' of ssh://github.com/jwinters01/argocd-example-apps"
+  "drySha": "c1d27fe379d2d758e20d3f0cddde98497e8a7a87",
+  "author": "jwinters01 <34199886+jwinters01@users.noreply.github.com>",
+  "date": "2025-10-01T14:44:53-04:00",
+  "subject": "Merge pull request #21 from jwinters01/jwinters01-patch-1",
+  "body": "Test new environment deployment\n"
 }
