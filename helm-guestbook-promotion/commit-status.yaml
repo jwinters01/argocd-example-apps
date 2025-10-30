@@ -2,7 +2,7 @@ apiVersion: promoter.argoproj.io/v1alpha1
 kind: ArgoCDCommitStatus
 metadata:
   name: argocd-health
-  namespace: gitops-promoter
+  namespace: helm-guestbook-promotion
 spec:
   promotionStrategyRef:
     name: demo-github

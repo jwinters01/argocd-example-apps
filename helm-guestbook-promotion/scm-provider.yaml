@@ -2,7 +2,7 @@ apiVersion: promoter.argoproj.io/v1alpha1
 kind: ScmProvider
 metadata:
   name: github
-  namespace: gitops-promoter
+  namespace: helm-guestbook-promotion
 spec:
   secretRef:
     name: github-app-promoter
