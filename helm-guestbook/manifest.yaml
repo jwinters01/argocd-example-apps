@@ -28,7 +28,7 @@ metadata:
     release: qal-helm-guestbook
   name: qal-helm-guestbook
 spec:
-  replicas: 3
+  replicas: 5
   revisionHistoryLimit: 5
   selector:
     matchLabels:
