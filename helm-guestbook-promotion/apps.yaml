@@ -91,3 +91,34 @@ spec:
     syncOptions:
       - CreateNamespace=true
 ---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: qal-helm-guestbook
+  namespace: argocd
+  labels:
+    # This label allows the ArgoCDCommitStatus to find the applications.
+    app-name: helm-guestbook
+spec:
+  project: default
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: qal
+  sourceHydrator:
+    drySource:
+      repoURL: https://github.com/jwinters01/argocd-example-apps
+      path: helm-guestbook
+      targetRevision: HEAD
+    hydrateTo:
+      targetBranch: environment/qal-next
+    syncSource:
+      targetBranch: environment/qal
+      path: helm-guestbook
+  syncPolicy:
+    automated:
+      prune: true
+      allowEmpty: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
