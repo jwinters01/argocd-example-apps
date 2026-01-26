@@ -5,8 +5,8 @@ metadata:
     app: helm-guestbook
     chart: helm-guestbook-0.1.0
     heritage: Helm
-    release: development-helm-guestbook
-  name: development-helm-guestbook
+    release: dev-helm-guestbook
+  name: dev-helm-guestbook
 spec:
   ports:
     - name: http
@@ -15,5 +15,45 @@ spec:
       targetPort: http
   selector:
     app: helm-guestbook
-    release: development-helm-guestbook
+    release: dev-helm-guestbook
   type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: helm-guestbook
+    chart: helm-guestbook-0.1.0
+    heritage: Helm
+    release: dev-helm-guestbook
+  name: dev-helm-guestbook
+spec:
+  replicas: 5
+  revisionHistoryLimit: 5
+  selector:
+    matchLabels:
+      app: helm-guestbook
+      release: dev-helm-guestbook
+  template:
+    metadata:
+      labels:
+        app: helm-guestbook
+        release: dev-helm-guestbook
+    spec:
+      containers:
+        - image: gcr.io/google-samples/gb-frontend:v5
+          imagePullPolicy: IfNotPresent
+          livenessProbe:
+            httpGet:
+              path: /
+              port: http
+          name: helm-guestbook
+          ports:
+            - containerPort: 80
+              name: http
+              protocol: TCP
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http
+          resources: {}
