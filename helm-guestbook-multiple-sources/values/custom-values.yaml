@@ -1,0 +1,21 @@
+# Custom values that override the chart defaults
+# This demonstrates the multiple sources feature where values come from a separate repository/directory
+
+replicaCount: 3
+
+image:
+  repository: gcr.io/google-samples/gb-frontend
+  tag: v5
+  pullPolicy: Always
+
+service:
+  type: LoadBalancer
+  port: 80
+
+resources:
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 50m
+    memory: 64Mi

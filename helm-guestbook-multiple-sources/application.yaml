@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: helm-guestbook-multiple-sources
+  namespace: argocd
+spec:
+  project: default
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  sources:
+    # Source 1: Helm chart from the chart directory
+    - repoURL: https://github.com/jwinters01/argocd-example-apps.git
+      path: helm-guestbook-multiple-sources/chart
+      targetRevision: HEAD
+      helm:
+        valueFiles:
+          - $values/helm-guestbook-multiple-sources/values/custom-values.yaml
+    # Source 2: Custom values from the values directory
+    - repoURL: https://github.com/jwinters01/argocd-example-apps.git
+      targetRevision: HEAD
+      ref: values
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
