@@ -13,7 +13,7 @@ spec:
     - autoMerge: true
       branch: environment/staging
     - autoMerge: true
-      branch: environment/perf
+      branch: environment/qal
     - autoMerge: false
       branch: environment/prod
   gitRepositoryRef:
