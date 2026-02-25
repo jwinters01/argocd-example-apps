@@ -1,0 +1,8 @@
+{
+  "repoURL": "https://github.com/jwinters01/argocd-example-apps",
+  "drySha": "a828517a751e6a505b2b538cd9d7a163ccb33c2b",
+  "author": "Jonathan Winters <wintersjonathan0@gmail.com>",
+  "date": "2026-02-18T13:39:18-08:00",
+  "subject": "rename to qal",
+  "body": "Signed-off-by: Jonathan Winters <wintersjonathan0@gmail.com>\n"
+}
