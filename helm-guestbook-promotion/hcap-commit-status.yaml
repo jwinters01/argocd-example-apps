@@ -13,5 +13,5 @@ spec:
     name: github-argocd-example-apps
   name: production/hcap
   phase: success
-  sha: da77389b5785469ce7c5b63e97232a9f3aa18bab
+  sha: 22b308906b51ba38a22d0beb1bded8ed902322eb
   url: https://example.com
