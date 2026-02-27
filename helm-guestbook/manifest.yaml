@@ -28,7 +28,7 @@ metadata:
     release: staging-helm-guestbook
   name: staging-helm-guestbook
 spec:
-  replicas: 4
+  replicas: 3
   revisionHistoryLimit: 5
   selector:
     matchLabels:
