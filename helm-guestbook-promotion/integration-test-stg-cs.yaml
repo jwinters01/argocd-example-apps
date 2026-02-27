@@ -10,6 +10,6 @@ spec:
   gitRepositoryRef:
     name: github-argocd-example-apps
   name: integration-tests-stg
-  phase: pending
-  sha: 22b308906b51ba38a22d0beb1bded8ed902322eb
+  phase: success
+  sha: 53809fe40e604b8bae0483e65922fde63ec08827
   url: https://example.com
