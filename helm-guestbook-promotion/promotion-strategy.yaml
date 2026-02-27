@@ -12,7 +12,7 @@ spec:
       branch: environment/development
     - autoMerge: true
       branch: environment/staging
-    - autoMerge: true
+    - autoMerge: false
       branch: environment/prod
   gitRepositoryRef:
     name: github-argocd-example-apps
