@@ -7,24 +7,12 @@ spec:
   activeCommitStatuses:
     # The ArgoCDCommitStatus CR will maintain this commit status based on the application health.
     - key: argocd-health
-  proposedCommitStatuses:
-    # Placeholder: Integration tests must pass before promotion. Implement as a commit status or TimedCommitStatus.
-    - key: integration-tests-passing
-      # description: Placeholder for integration test check. Should be set to success by CI or a timer.
-
-  # The environments list defines promotion order and environment-specific checks.
   environments:
     - autoMerge: true
       branch: environment/development
-    # Integration tests check applies to all environments by default.
     - autoMerge: true
       branch: environment/staging
-    # Integration tests check applies to all environments by default.
     - autoMerge: false
       branch: environment/prod
-      # Add a production-only placeholder check for HCAP (High Change Awareness Period)
-      proposedCommitStatuses:
-        - key: hcap-check
-          # description: Placeholder for HCAP (High Change Awareness Period) check. Should be set to success by a timer or manual process.
   gitRepositoryRef:
     name: github-argocd-example-apps
