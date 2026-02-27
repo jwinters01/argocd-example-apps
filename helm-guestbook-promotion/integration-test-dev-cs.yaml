@@ -2,8 +2,8 @@ apiVersion: promoter.argoproj.io/v1alpha1
 kind: CommitStatus
 metadata:
   labels:
-    promoter.argoproj.io/commit-status: integration-tests
-  name: integration-tests
+    promoter.argoproj.io/commit-status: integration-tests-dev
+  name: integration-tests-dev
   namespace: helm-guestbook-promotion
 spec:
   description: Integration test check for development
