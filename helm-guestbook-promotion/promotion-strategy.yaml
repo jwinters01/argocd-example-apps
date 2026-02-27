@@ -14,5 +14,7 @@ spec:
       branch: environment/staging
     - autoMerge: false
       branch: environment/prod
+      proposedCommitStatuses:
+      - key: hcap
   gitRepositoryRef:
     name: github-argocd-example-apps
