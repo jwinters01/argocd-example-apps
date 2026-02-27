@@ -16,5 +16,7 @@ spec:
       branch: environment/qal
     - autoMerge: false
       branch: environment/prod
+      proposedCommitStatuses:
+      - key: github-pr-approval
   gitRepositoryRef:
     name: github-argocd-example-apps
