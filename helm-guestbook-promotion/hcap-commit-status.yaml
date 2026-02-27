@@ -12,6 +12,6 @@ spec:
   gitRepositoryRef:
     name: github-argocd-example-apps
   name: hcap
-  phase: pending
-  sha: 22b308906b51ba38a22d0beb1bded8ed902322eb
+  phase: success
+  sha: 8db5b1bbd9138090162b94f64880d250a6c8d152
   url: https://example.com
