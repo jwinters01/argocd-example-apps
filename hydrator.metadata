@@ -1,8 +1,8 @@
 {
   "repoURL": "https://github.com/jwinters01/argocd-example-apps",
-  "drySha": "da77389b5785469ce7c5b63e97232a9f3aa18bab",
+  "drySha": "d1b25104ac911cf298ec2c823aa62a779bd8e020",
   "author": "Jonathan Winters <wintersjonathan0@gmail.com>",
-  "date": "2026-02-27T09:45:13-08:00",
-  "subject": "change replicacount to 3",
+  "date": "2026-02-27T13:04:58-08:00",
+  "subject": "change names",
   "body": "Signed-off-by: Jonathan Winters <wintersjonathan0@gmail.com>\n"
 }
