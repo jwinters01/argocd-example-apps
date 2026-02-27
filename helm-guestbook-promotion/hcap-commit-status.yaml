@@ -10,8 +10,8 @@ metadata:
 spec:
   description: HCAP check for production
   gitRepositoryRef:
-    name: argocon-demo
+    name: github-argocd-example-apps
   name: production/hcap
-  phase: success
-  sha: e2248bf82581b0bc5cfb17f5e62502cc8a78c8ca
+  phase: pending
+  sha: f7a48f1ca2f1cc3da3f39ea5468f03c6dcc61401
   url: https://example.com
