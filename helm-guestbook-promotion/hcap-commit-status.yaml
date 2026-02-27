@@ -11,7 +11,7 @@ spec:
   description: HCAP check for production
   gitRepositoryRef:
     name: github-argocd-example-apps
-  name: production/hcap
+  name: hcap
   phase: success
   sha: 22b308906b51ba38a22d0beb1bded8ed902322eb
   url: https://example.com
