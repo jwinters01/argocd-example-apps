@@ -1,0 +1,15 @@
+apiVersion: promoter.argoproj.io/v1alpha1
+kind: CommitStatus
+metadata:
+  labels:
+    promoter.argoproj.io/commit-status: integration-tests
+  name: integration-tests
+  namespace: helm-guestbook-promotion
+spec:
+  description: Integration test check for staging
+  gitRepositoryRef:
+    name: github-argocd-example-apps
+  name: integration-tests-stg
+  phase: pending
+  sha: 22b308906b51ba38a22d0beb1bded8ed902322eb
+  url: https://example.com

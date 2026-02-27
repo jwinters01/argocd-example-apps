@@ -10,11 +10,16 @@ spec:
   environments:
     - autoMerge: true
       branch: environment/development
+      proposedCommitStatuses:
+      - key: integration-tests-dev
     - autoMerge: true
       branch: environment/staging
+      proposedCommitStatuses:
+      - key: integration-tests-stg
     - autoMerge: false
       branch: environment/prod
       proposedCommitStatuses:
+      - key: integration-tests-prod
       - key: hcap
   gitRepositoryRef:
     name: github-argocd-example-apps
