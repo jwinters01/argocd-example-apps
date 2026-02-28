@@ -1,8 +1,8 @@
 {
   "repoURL": "https://github.com/jwinters01/argocd-example-apps",
-  "drySha": "00edd67d48d432b84a5807444824c41e53713110",
+  "drySha": "61ad94384a51499137cf5d56ed146a184a1f0185",
   "author": "Jonathan Winters <wintersjonathan0@gmail.com>",
-  "date": "2026-02-27T13:43:18-08:00",
-  "subject": "scale down",
+  "date": "2026-02-27T16:38:06-08:00",
+  "subject": "scale up",
   "body": "Signed-off-by: Jonathan Winters <wintersjonathan0@gmail.com>\n"
 }
