@@ -11,5 +11,5 @@ spec:
     name: github-argocd-example-apps
   name: integration-tests-prod
   phase: success
-  sha: 8454dce02f6160a599eca7c78206fe7621cbdc46
+  sha: 9e9f2d5ef2f905c973f31a3d0010d817414d5297
   url: https://example.com
