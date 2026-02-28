@@ -6,7 +6,7 @@ metadata:
   annotations:
     # Add any necessary annotations for your ingress controller
     # For example, if using nginx-ingress:
-    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    # nginx.ingress.kubernetes.io/ssl-redirect: "true"
 spec:
   ingressClassName: nginx
   rules:
