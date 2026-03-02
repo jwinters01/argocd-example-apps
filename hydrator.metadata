@@ -1,8 +1,8 @@
 {
   "repoURL": "https://github.com/jwinters01/argocd-example-apps",
-  "drySha": "072136ef57b82fca1c10ba1de23cbc9526901d9d",
+  "drySha": "7855e35b8b1e8446b8c47f39a07eb6d5e0af12f0",
   "author": "Jonathan Winters <wintersjonathan0@gmail.com>",
-  "date": "2026-03-02T09:48:32-08:00",
+  "date": "2026-03-02T12:45:40-08:00",
   "subject": "scale up",
   "body": "Signed-off-by: Jonathan Winters <wintersjonathan0@gmail.com>\n",
   "references": [
@@ -12,8 +12,8 @@
         "date": "2026-03-02T09:45:18-08:00",
         "subject": "fix race condition",
         "body": "fixes an issue that caused a race condition in primary service",
-        "sha": "0000000000000000000000000000000000000000",
-        "repoUrl": "https://github.com/argoproj/argocd-example-apps"
+        "sha": "41d245b84e8ce4063b551e640313fc20d021c2b2",
+        "repoUrl": "https://github.com/argoproj/argocd-example-apps.git"
       }
     }
   ]
