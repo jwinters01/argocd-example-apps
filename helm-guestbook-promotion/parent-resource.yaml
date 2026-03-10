@@ -1,9 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: promotion-strategy-generator
-  namespace: helm-guestbook-promotion
-  annotations:
-    argocd.argoproj.io/sync-wave: "0"
-data:
-  description: "Simulated parent resource that generates the PromotionStrategy"
