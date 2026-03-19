@@ -91,3 +91,93 @@ spec:
       selfHeal: true
     syncOptions:
       - CreateNamespace=true
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: alpha-helm-guestbook
+  namespace: argocd
+  labels:
+    app-name: helm-guestbook
+spec:
+  project: default
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: alpha
+  sourceHydrator:
+    drySource:
+      repoURL: https://github.com/jwinters01/argocd-example-apps
+      path: helm-guestbook
+      targetRevision: HEAD
+    hydrateTo:
+      targetBranch: environment/alpha-next
+    syncSource:
+      targetBranch: environment/alpha
+      path: helm-guestbook
+  syncPolicy:
+    automated:
+      prune: true
+      allowEmpty: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: beta-helm-guestbook
+  namespace: argocd
+  labels:
+    app-name: helm-guestbook
+spec:
+  project: default
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: beta
+  sourceHydrator:
+    drySource:
+      repoURL: https://github.com/jwinters01/argocd-example-apps
+      path: helm-guestbook
+      targetRevision: HEAD
+    hydrateTo:
+      targetBranch: environment/beta-next
+    syncSource:
+      targetBranch: environment/beta
+      path: helm-guestbook
+  syncPolicy:
+    automated:
+      prune: true
+      allowEmpty: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: gamma-helm-guestbook
+  namespace: argocd
+  labels:
+    app-name: helm-guestbook
+spec:
+  project: default
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: gamma
+  sourceHydrator:
+    drySource:
+      repoURL: https://github.com/jwinters01/argocd-example-apps
+      path: helm-guestbook
+      targetRevision: HEAD
+    hydrateTo:
+      targetBranch: environment/gamma-next
+    syncSource:
+      targetBranch: environment/gamma
+      path: helm-guestbook
+  syncPolicy:
+    automated:
+      prune: true
+      allowEmpty: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
