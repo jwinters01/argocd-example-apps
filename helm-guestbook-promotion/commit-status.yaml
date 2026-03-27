@@ -9,5 +9,3 @@ spec:
   applicationSelector:
     matchLabels:
       app-name: helm-guestbook
-  url:
-    template: https://www.google.com
