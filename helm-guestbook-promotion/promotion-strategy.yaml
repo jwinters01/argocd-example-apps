@@ -16,21 +16,3 @@ spec:
       branch: environment/prod
   gitRepositoryRef:
     name: github-argocd-example-apps
----
-apiVersion: promoter.argoproj.io/v1alpha1
-kind: PromotionStrategy
-metadata:
-  name: demo-github-2
-  namespace: helm-guestbook-promotion
-spec:
-  activeCommitStatuses:
-    - key: argocd-health
-  environments:
-    - autoMerge: false
-      branch: environment/alpha
-    - autoMerge: false
-      branch: environment/beta
-    - autoMerge: false
-      branch: environment/gamma
-  gitRepositoryRef:
-    name: github-argocd-example-apps
