@@ -51,10 +51,10 @@ spec:
             - /bin/sh
             - -c
             - |
-              UID=$(kubectl get gitrepository github-argocd-example-apps \
+              REPO_UID=$(kubectl get gitrepository github-argocd-example-apps \
                 -n helm-guestbook-promotion \
                 -o jsonpath='{.metadata.uid}')
               kubectl patch promotionstrategy demo-github \
                 -n helm-guestbook-promotion \
                 --type=merge \
-                -p "{\"metadata\":{\"ownerReferences\":[{\"apiVersion\":\"promoter.argoproj.io/v1alpha1\",\"kind\":\"GitRepository\",\"name\":\"github-argocd-example-apps\",\"uid\":\"${UID}\",\"controller\":false,\"blockOwnerDeletion\":false}]}}"
+                -p "{\"metadata\":{\"ownerReferences\":[{\"apiVersion\":\"promoter.argoproj.io/v1alpha1\",\"kind\":\"GitRepository\",\"name\":\"github-argocd-example-apps\",\"uid\":\"${REPO_UID}\",\"controller\":false,\"blockOwnerDeletion\":false}]}}"
