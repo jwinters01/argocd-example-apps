@@ -1,8 +1,8 @@
 {
   "repoURL": "https://github.com/jwinters01/argocd-example-apps",
-  "drySha": "c3e813637c23ea2d9d2185d29e1f0bbe864ba5e0",
+  "drySha": "be29eef7da2052056ed90ef24c4dcd1371b8b4b8",
   "author": "Jonathan Winters <wintersjonathan0@gmail.com>",
-  "date": "2026-03-19T10:17:20-07:00",
-  "subject": "remove commit statuses",
-  "body": "remove statuses from demo\n\nSigned-off-by: Jonathan Winters <wintersjonathan0@gmail.com>\n"
+  "date": "2026-03-29T11:00:32-07:00",
+  "subject": "remove ownerref-patch.yaml",
+  "body": "Signed-off-by: Jonathan Winters <wintersjonathan0@gmail.com>\n"
 }
