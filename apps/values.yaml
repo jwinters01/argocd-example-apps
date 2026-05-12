@@ -42,3 +42,7 @@ applications:
   - name: pre-post-sync
   - name: sock-shop
   - name: sync-waves
+  - name: helm-guestbook-promotion
+    namespace: helm-guestbook-promotion
+    repoURL: https://github.com/jwinters01/argocd-example-apps
+    targetRevision: demo/argocdcommitstatus-url-template

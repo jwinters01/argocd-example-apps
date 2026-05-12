@@ -9,3 +9,27 @@ spec:
   applicationSelector:
     matchLabels:
       app-name: helm-guestbook
+  url:
+    template: |
+      {{- $env := trimPrefix "environment/" .Environment -}}
+      /applications?labels={{ urlQueryEscape (printf "app-name=helm-guestbook,env=%s" $env) }}
+    options:
+      - missingkey=zero
+---
+apiVersion: promoter.argoproj.io/v1alpha1
+kind: ArgoCDCommitStatus
+metadata:
+  name: argocd-health-2
+  namespace: helm-guestbook-promotion
+spec:
+  promotionStrategyRef:
+    name: demo-github-2
+  applicationSelector:
+    matchLabels:
+      app-name: helm-guestbook
+  url:
+    template: |
+      {{- $env := trimPrefix "environment/" .Environment -}}
+      /applications?labels={{ urlQueryEscape (printf "app-name=helm-guestbook,env=%s" $env) }}
+    options:
+      - missingkey=zero

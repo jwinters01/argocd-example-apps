@@ -6,6 +6,7 @@ metadata:
   labels:
     # This label allows the ArgoCDCommitStatus to find the applications.
     app-name: helm-guestbook
+    env: development
     test: label-val
 spec:
   project: default
@@ -38,6 +39,7 @@ metadata:
   labels:
     # This label allows the ArgoCDCommitStatus to find the applications.
     app-name: helm-guestbook
+    env: staging
 spec:
   project: default
   destination:
@@ -69,6 +71,7 @@ metadata:
   labels:
     # This label allows the ArgoCDCommitStatus to find the applications.
     app-name: helm-guestbook
+    env: prod
 spec:
   project: default
   destination:
@@ -99,6 +102,7 @@ metadata:
   namespace: argocd
   labels:
     app-name: helm-guestbook
+    env: alpha
 spec:
   project: default
   destination:
@@ -129,6 +133,7 @@ metadata:
   namespace: argocd
   labels:
     app-name: helm-guestbook
+    env: beta
 spec:
   project: default
   destination:
@@ -159,6 +164,7 @@ metadata:
   namespace: argocd
   labels:
     app-name: helm-guestbook
+    env: gamma
 spec:
   project: default
   destination:

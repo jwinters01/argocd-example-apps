@@ -14,8 +14,8 @@ spec:
   project: default
   source:
     path: {{ .path | default .name | quote }}
-    repoURL: {{ $config.spec.source.repoURL }}
-    targetRevision: {{ $config.spec.source.targetRevision }}
+    repoURL: {{ .repoURL | default $config.spec.source.repoURL }}
+    targetRevision: {{ .targetRevision | default $config.spec.source.targetRevision }}
     {{- with .tool }}
     {{- . | toYaml | nindent 4 }}
     {{- end }}
