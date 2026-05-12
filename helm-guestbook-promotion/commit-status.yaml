@@ -9,8 +9,8 @@ spec:
   applicationSelector:
     matchLabels:
       app-name: helm-guestbook
-  url:
-    template: |
+  detailUrl:
+    template: |-
       {{- $env := trimPrefix "environment/" .Environment -}}
       /applications?labels={{ urlQueryEscape (printf "app-name=helm-guestbook,env=%s" $env) }}
     options:
@@ -27,8 +27,8 @@ spec:
   applicationSelector:
     matchLabels:
       app-name: helm-guestbook
-  url:
-    template: |
+  detailUrl:
+    template: |-
       {{- $env := trimPrefix "environment/" .Environment -}}
       /applications?labels={{ urlQueryEscape (printf "app-name=helm-guestbook,env=%s" $env) }}
     options:
