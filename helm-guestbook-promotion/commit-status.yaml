@@ -7,8 +7,9 @@ spec:
   promotionStrategyRef:
     name: demo-github
   applicationSelector:
-    matchLabels:
-      app-name: helm-guestbook
+    matchExpressions:
+      - { key: app-name, operator: In, values: [helm-guestbook] }
+      - { key: env, operator: In, values: [development, staging, prod] }
   detailUrl:
     template: |-
       {{- $env := trimPrefix "environment/" .Environment -}}
@@ -25,8 +26,9 @@ spec:
   promotionStrategyRef:
     name: demo-github-2
   applicationSelector:
-    matchLabels:
-      app-name: helm-guestbook
+    matchExpressions:
+      - { key: app-name, operator: In, values: [helm-guestbook] }
+      - { key: env, operator: In, values: [alpha, beta, gamma] }
   detailUrl:
     template: |-
       {{- $env := trimPrefix "environment/" .Environment -}}
