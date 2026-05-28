@@ -17,6 +17,10 @@ spec:
       repoURL: https://github.com/jwinters01/argocd-example-apps
       path: helm-guestbook
       targetRevision: HEAD
+      helm:
+        valueFiles:
+          - values.yaml
+          - values-development.yaml
     hydrateTo:
       targetBranch: environment/development-next
     syncSource:
