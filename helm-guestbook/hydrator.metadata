@@ -1,6 +1,6 @@
 {
   "repoURL": "https://github.com/jwinters01/argocd-example-apps",
-  "drySha": "7b76b4112e6afe6284c88887b8dfc7932bb50636",
+  "drySha": "cd676414ae172aaed87b7b898249e0a6601b9d8b",
   "commands": [
     "helm template . --name-template staging-helm-guestbook --namespace staging --include-crds"
   ]
