@@ -28,7 +28,7 @@ metadata:
     release: alpha-helm-guestbook
   name: alpha-helm-guestbook
 spec:
-  replicas: 3
+  replicas: 6
   revisionHistoryLimit: 5
   selector:
     matchLabels:
