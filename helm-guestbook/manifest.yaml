@@ -28,7 +28,7 @@ metadata:
     release: beta-helm-guestbook
   name: beta-helm-guestbook
 spec:
-  replicas: 3
+  replicas: 6
   revisionHistoryLimit: 5
   selector:
     matchLabels:
