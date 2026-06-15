@@ -1,8 +1,8 @@
 {
   "repoURL": "https://github.com/jwinters01/argocd-example-apps",
-  "drySha": "82255c8e6ad082f4fed5bfa2eabd3a33d7a9640e",
+  "drySha": "7b76b4112e6afe6284c88887b8dfc7932bb50636",
   "author": "jwinters01 <34199886+jwinters01@users.noreply.github.com>",
-  "date": "2026-06-15T18:56:32Z",
-  "subject": "Scale replicaCount back to 3",
-  "body": "triggers another promotioon\n"
+  "date": "2026-06-15T19:33:36Z",
+  "subject": "replicaCount to 6",
+  "body": "for clashing promotions\n"
 }
