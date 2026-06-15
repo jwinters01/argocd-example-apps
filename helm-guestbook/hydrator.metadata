@@ -1,6 +1,6 @@
 {
   "repoURL": "https://github.com/jwinters01/argocd-example-apps",
-  "drySha": "82255c8e6ad082f4fed5bfa2eabd3a33d7a9640e",
+  "drySha": "7b76b4112e6afe6284c88887b8dfc7932bb50636",
   "commands": [
     "helm template . --name-template gamma-helm-guestbook --namespace gamma --include-crds"
   ]
