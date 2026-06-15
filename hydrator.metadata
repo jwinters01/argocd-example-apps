@@ -1,8 +1,8 @@
 {
   "repoURL": "https://github.com/jwinters01/argocd-example-apps",
-  "drySha": "796c3887be721a93c5d30e518f9a118b6a0a307e",
-  "author": "Jonathan Winters <wintersjonathan0@gmail.com>",
-  "date": "2026-06-15T18:42:24Z",
-  "subject": "chore: bump replicaCount to 5 to trigger promotion",
-  "body": "Signed-off-by: Jonathan Winters <wintersjonathan0@gmail.com>\n"
+  "drySha": "82255c8e6ad082f4fed5bfa2eabd3a33d7a9640e",
+  "author": "jwinters01 <34199886+jwinters01@users.noreply.github.com>",
+  "date": "2026-06-15T18:56:32Z",
+  "subject": "Scale replicaCount back to 3",
+  "body": "triggers another promotioon\n"
 }
