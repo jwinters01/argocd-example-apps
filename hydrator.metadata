@@ -1,8 +1,8 @@
 {
   "repoURL": "https://github.com/jwinters01/argocd-example-apps",
-  "drySha": "fb9e468ada1e1b4ffb1393e4cb1f7242c1dad6e0",
-  "author": "jwinters01 <34199886+jwinters01@users.noreply.github.com>",
-  "date": "2026-07-08T08:55:02-07:00",
-  "subject": "Merge pull request #117 from jwinters01/test-pr",
-  "body": "scale up replicas\n"
+  "drySha": "a0d3f48841aab6086995e40e11eaa087f0f2a9b1",
+  "author": "Jonathan Winters <wintersjonathan0@gmail.com>",
+  "date": "2026-07-16T08:12:20-07:00",
+  "subject": "replacount to 3",
+  "body": "Signed-off-by: Jonathan Winters <wintersjonathan0@gmail.com>\n"
 }
