@@ -14,6 +14,9 @@ spec:
       branch: environment/staging
     - autoMerge: false
       branch: environment/prod
+      # The TimedCommitStatus CR gates this environment for a fixed soak period before reporting success.
+      activeCommitStatuses:
+        - key: timer
   gitRepositoryRef:
     name: github-argocd-example-apps
 ---

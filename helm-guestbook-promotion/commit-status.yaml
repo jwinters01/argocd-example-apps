@@ -9,3 +9,16 @@ spec:
   applicationSelector:
     matchLabels:
       app-name: helm-guestbook
+---
+apiVersion: promoter.argoproj.io/v1alpha1
+kind: TimedCommitStatus
+metadata:
+  name: prod-soak-timer
+  namespace: helm-guestbook-promotion
+spec:
+  promotionStrategyRef:
+    name: demo-github
+  key: timer
+  environments:
+    - branch: environment/prod
+      duration: 2m
