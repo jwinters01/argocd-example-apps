@@ -32,3 +32,13 @@ spec:
   promotionStrategyRef:
     name: demo-github
   key: dependents-successful
+---
+apiVersion: promoter.argoproj.io/v1alpha1
+kind: DependentsSuccessfulCommitStatus
+metadata:
+  name: demo-github-2-dependents
+  namespace: helm-guestbook-promotion
+spec:
+  promotionStrategyRef:
+    name: demo-github-2
+  key: dependents-successful

@@ -35,6 +35,8 @@ metadata:
   name: demo-github-2
   namespace: helm-guestbook-promotion
 spec:
+  orderCommitStatusRef:
+    name: demo-github-2-dependents
   activeCommitStatuses:
     - key: argocd-health
   environments:
@@ -42,7 +44,11 @@ spec:
       branch: environment/alpha
     - autoMerge: false
       branch: environment/beta
+      activeCommitStatuses:
+        - key: dependents-successful
     - autoMerge: false
       branch: environment/gamma
+      activeCommitStatuses:
+        - key: dependents-successful
   gitRepositoryRef:
     name: github-argocd-example-apps
